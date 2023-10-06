@@ -4,9 +4,11 @@
         set<int> s;
         int count = 0;
         for (int i=0; i<n; i++){
+             // insert the elements of a[] in set.
             s.insert(a[i]);
         }
             for (int j=0; j<m; j++){
+             // insert the elements of b[] in set.
             s.insert(b[j]);
             
         }
