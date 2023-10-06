@@ -1,0 +1,20 @@
+void segregateElements(int arr[],int n)
+    {
+        // Create a temp array to store the values.
+        vector<int> temp;
+        // Run a loop to push all the postive value one by one in temp.
+        for(int i=0; i<n; i++){
+            if(arr[i] >= 0){
+                temp.push_back(arr[i]);
+            }
+        }
+        // Run a loop to push all the negative values one by one in temp.
+        for(int i=0; i<n; i++){
+            if(arr[i] <= 0){
+                temp.push_back(arr[i]);
+            }
+        }
+        // Run a loop to copy the temp array to the main array
+        for(int i=0; i<n; i++){
+            arr[i] = temp[i];
+        }
