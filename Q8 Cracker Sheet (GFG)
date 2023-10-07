@@ -1,0 +1,17 @@
+long long maxSubarraySum(int arr[], int n){
+        
+        // Your code here
+        // Initialize  a sum with zero .
+        int sum = 0;
+        // put the first element of the array as max.
+        int maxi = arr[0];
+        for (int i=0; i<n; i++){
+            sum = sum + arr[i];
+            maxi = max(maxi, sum);
+            if (sum <= 0){
+                sum = 0;
+            }
+        }
+        return maxi;
+        
+    }
